@@ -1,0 +1,259 @@
+@CHARSET "UTF-8";
+
+div.page {
+	/*border: 1mm solid #B9B9B9;*/
+	display: block;
+	margin:auto;
+	background: white;
+	text-align: center;
+    font-family: Arial, '黑体';
+}
+
+.auto-height {
+	height: auto;
+}
+
+.page-content {
+	background: white;
+}
+
+.page table > tbody {
+	text-align: center;
+}
+
+.page table.multi-row {
+	border-collapse: collapse;
+	margin:auto;
+	width: 100%;
+	max-height: 100%;
+	border: 0.3mm solid;
+	border-color: #7E7E7E;
+	font-size: 3mm;
+	font-weight: 400;
+	table-layout:fixed;
+	color: black;
+}
+
+.page table.multi-row tr {
+	height: 5mm;
+	padding: 0;
+}
+
+.page table.multi-row tbody tr {
+	height: 8mm;
+	overflow: hidden;
+}
+
+.page table.multi-row tbody tr div {
+	max-height: 8mm;
+}
+
+.page table.multi-row th, td {
+	font-weight: 400;
+	border: 0.3mm solid;
+	border-color: #7E7E7E;
+	height: 6mm;
+	overflow: hidden;
+	padding: 0;
+	word-wrap:break-word;
+	word-break:break-all;
+}
+
+table.no-wrap {
+	border-collapse: collapse;
+	margin:auto;
+	width: 100%;
+	max-height: 100%;
+	table-layout:fixed;
+	border: 1px solid;
+	border-color: #7E7E7E;
+	font-weight: 400;
+}
+
+table.no-wrap th, td {
+	font-weight: 400;
+	border: 0.3mm solid black;
+	border-color: black;
+	height: 6.5mm;
+}
+
+table.no-wrap td div {
+	font-size: 4mm;
+	white-space: nowrap;
+	overflow: hidden;
+	/*
+	text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -icab-text-overflow: ellipsis;
+    -khtml-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    */
+}
+
+table.no-wrap td div:hover
+{
+	text-overflow:inherit;
+	overflow:visible;
+}
+
+table.no-wrap tr {
+	height: 6.5mm;
+}
+
+.Ah35w55 {
+	width: 55mm;
+	height: 33mm;
+}
+
+.Ah35w55-margin {
+	margin: 0mm 3mm 0mm 3mm;
+}
+
+.A4 {
+	width: 210mm;
+	height: 297mm;
+}
+
+.A4margin {
+	margin: 0mm 5mm 5mm 3mm;
+}
+
+.A4-border {
+	width: 211mm;
+	height: 298mm;
+}
+
+.A5 {
+	width: 148mm;
+	height: 210mm;
+}
+
+.A5margin {
+	margin: 0mm 5mm 5mm 3mm;
+}
+
+.A5-border {
+	width: 149mm;
+	height: 211mm;
+}
+
+.w-80mm {
+	width: 72mm;
+	/*
+	height: 295mm;
+	*/
+}
+
+.w-80mm-margin {
+	margin: 0mm 3mm 5mm 7mm;
+}
+
+.w-80mm .title {
+	font-size: 4mm;
+	height: 4mm;
+}
+
+.Asaleorder {
+	width: 240mm;
+	height: 153mm;
+}
+
+.A210margin {
+	margin: 0mm 10mm 5mm 10mm;
+}
+
+.Asaleordermargin {
+	margin: 0mm 8mm 0mm 2mm;
+}
+
+caption {
+	background: white;
+	margin-bottom: 3mm;
+}
+
+div .title {
+	font-size: 5mm;
+	margin: 15mm;
+}
+
+div.headertitle {
+	position: relative;
+	margin-bottom: 2mm;
+}
+
+div .other {
+	font-size: 4mm;
+}
+
+caption .title-content {
+	text-align: left;
+}
+
+caption span {
+	width: 25mm;
+}
+
+.header {
+	height: 5mm;
+	min-height: 5mm;
+}
+
+.footer {
+	margin-top: 3mm;
+}
+
+.footer-left {
+	text-align: left;
+}
+
+.footer-right {
+	text-align: right;
+}
+
+.odc-div {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	/*
+	height: 10mm;
+	line-height: 10mm;
+	width: 10mm;
+	*/
+}
+
+.title-div {
+	display: inline-block;
+	font-size: 5mm;
+	font-weight: 700;
+	height: 10mm;
+	line-height: 10mm;
+}
+
+.spantitle {
+	display:inline-block;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	width: 50px;
+	white-space: nowrap;
+	overflow: hidden;
+	/*
+	text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -icab-text-overflow: ellipsis;
+    -khtml-text-overflow: ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+    */
+}
+
+.qr-code {
+	width: 50px;
+  	height: 50px;
+  	display: inline-block;
+  	position: absolute;
+  	top: -20;
+  	right: 10;
+}

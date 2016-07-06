@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>智贸通-打印预览</title>
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/preview-table.css" type="text/css">
+    <link rel="stylesheet" href="./css/print-icon/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="./css/preview.css" type="text/css">
+</head>
+<body>
+
+<div class="header-container no-print">
+    <div class="app-title">
+        <span class="app-model iconfont icon-print"></span>
+        <label class="label-title ellipsis">
+            预览
+        </label>
+        <div class="border-right"></div>
+    </div>
+    <div class="action-group">
+        <a id="print" href="#" title="直接打印">
+            <div class="print-div">
+                <span class="iconfont icon-print-m print-icon"></span>
+            </div>
+        </a>
+        <a id="print-settting" href="#" title="打印设置">
+            <div class="print-div">
+                <span class="iconfont icon-print-setting print-icon"></span>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="body-container no-print">
+    <div class="left-panel">
+        <div class="border-right"></div>
+        <div class="menu-content">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active">
+                    <a href="#" class="nav-title">代销出库单（折扣：100%）</a>
+                </li>
+                <li role="presentation">
+                    <a href="#" class="nav-title">代销出库单（折扣：100%）</a>
+                </li>
+            </ul>
+            <div class="app-setting">
+                <a href="#" title="查看分单规则">
+                    <div class="app-ctn">
+                        <span class="iconfont icon-setting app-icon"></span>
+                        查看分单规则
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="footer">
+            <span class="footer1" style="white-space: nowrap;">
+                <a href="#" style="color: #08c; text-decoration: none;">智贸通</a>
+            </span> |
+            <span class="footer1" style="white-space: nowrap;">
+                <a href="#" style="color: #08c; text-decoration: none;">支持</a>
+            </span> |
+            <span class="footer1" style="white-space: nowrap;">
+                <a href="#" style="color: #08c; text-decoration: none;">客户隐私政策</a>
+            </span>
+            <br>
+            <span class="bottomContent">
+                <span class="footer1" style="white-space: nowrap;">
+                Copyright © 2014
+                </span>
+                <span>海南智韬科技有限公司, <span class="nobr"><a href="#address" id="address"
+                                                    style="color: #888888; text-decoration: none;cursor:text;"
+                                                    target="_self"
+                                                    onclick="return false;">HNZT.All Rights Reserved.</a></span>
+                </span>
+                <span class="footer1" style="white-space: nowrap;">保留所有权利。</span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<iframe id="content" src="page.html" style="width: 250mm; height: 153mm;border: 0" title="打印页"></iframe>
+
+<div class="modal fade no-print" id="setting" tabindex="-1" role="dialog">
+    <div class="modal-dialog" style="width: 380px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">打印设置</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <label for="printer">打印机设置</label>
+                    <select id="printer" class="form-control">
+                    </select>
+                </div>
+                <h5 style="margin-top: 25px;">边距设置 (单位: 毫米)</h5>
+                <div class="margin-setting">
+                    <div class="margin top-page"><input type="number" name="marginTop" value="0"></div>
+                    <div class="margin right-page"><input type="number" name="marginRight" value="0"></div>
+                    <div class="pages"></div>
+                    <div class="margin bottom-page"><input type="number" name="marginBottom" value="0"></div>
+                    <div class="margin left-page"><input type="number" name="marginLeft" value="0"></div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-info j-enter">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../lib/jquery/dist/jquery.min.js"></script>
+<script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../lib/nicescroll/dist/jquery.nicescroll.min.js"></script>
+<script src="./js/preview.js"></script>
+</body>
+</html>

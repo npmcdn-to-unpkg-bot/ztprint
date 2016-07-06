@@ -1,0 +1,251 @@
+body {
+    font-size: 12px;
+    font-family: 'SFNSText', 'Helvetica Neue', sans-serif;
+    font-family: 'SFNSDisplay', 'SFNSText', 'Helvetica Neue', sans-serif;
+    font-family: 'SFNSText', 'Helvetica Neue', 'Microsoft Yahei', 'SimHei', sans-serif;
+    font-family: 'SFNSDisplay', 'SFNSText', 'Helvetica Neue', sans-serif;
+    font-family: 'SFNSDisplay', 'SFNSText', 'Helvetica Neue', sans-serif;
+
+}
+
+@media print {
+    .no-print {
+        display: none;
+    }
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+
+.header-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 44px;
+    border-bottom: 1px solid rgba(0, 95, 167, 0.35);
+}
+
+.label-title {
+    position: relative;
+    font-size: 21px;
+    _font-size: 12px;
+    line-height: 31px;
+    height: 30px;
+    margin-top: 6px;
+    font-weight: 300;
+    left: 55px;
+    color: #007aff;
+    font-family: '新宋体';
+}
+
+.border-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    background: #bad0df;
+}
+
+.action-group {
+    position: absolute;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: url('packed-3.png') repeat-x 0 -1280px;
+}
+
+.body-container {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.app-model {
+    position: absolute;
+    font-size: 32px;
+    line-height: 30px;
+    height: 30px;
+    margin-top: 3px;
+    left: 15px;
+    font-family: "新宋体";
+}
+
+.app-title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background: #DCEFFB;
+}
+
+.left-panel {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px;
+    background: rgb(221, 238, 251);
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+}
+
+.menu-title {
+    padding-left: 8px;
+}
+
+.menu-content {
+    margin-right: 1px;
+}
+
+.menu-content .nav-title {
+    border-radius: 0;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #465d6f;
+}
+
+.menu-content .nav-title:hover {
+    background: inherit;
+}
+
+.active .menu-content .nav-title {
+    background-color: #cae8fb;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #cae8fb;
+    color: #007aff;
+}
+
+.app-setting {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 44px;
+    margin-right: 1px;
+    background: #ddeefb;
+    border-top: 1px solid #bad0df;
+    box-shadow: 0 1px 0 #e4f1fc inset;
+}
+
+.print-div {
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-top: 6px;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.print-icon {
+    font-size: 25px;
+    line-height: 30px;
+    height: 30px;
+    color: #007aff;
+}
+
+.app-ctn {
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-top: 6px;
+    padding: 0 6px;
+    cursor: pointer;
+}
+
+.app-icon {
+    font-size: 21px;
+    line-height: 30px;
+    height: 30px;
+}
+
+.footer {
+    margin: 25px auto auto auto;
+    font-family: 'Geneva', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    width: 685px;
+    font-size: 11px;
+    line-height: 14px;
+    color: #888;
+    text-align: center;
+    padding: 15px 0 12px;
+    -webkit-text-size-adjust: 100%;
+    background: url('footer_gradient_web.png') no-repeat center top;
+}
+
+.page-boder {
+    margin: 15px auto auto auto;
+    border: 1px solid #ddd;
+}
+
+.page-boder > div {
+    margin-left: -1px;
+}
+
+.margin-setting {
+    position: relative;
+    margin: auto;
+    width: 230px;
+    padding: 30px 0;
+}
+
+.margin {
+    position: absolute;
+}
+
+.margin input {
+    width: 50px;
+    height: 23px;
+}
+
+.top-page {
+    top: 0;
+    left: 90px;
+}
+
+.right-page {
+    right: 0;
+    top: 82px;
+}
+
+.bottom-page {
+    bottom: 0;
+    left: 90px;
+}
+
+.left-page {
+    left: 0;
+    bottom: 83px;
+}
+
+.pages {
+    position: relative;
+    margin: auto;
+    background: url('pager.png') no-repeat center top;
+    width: 128px;
+    height: 128px;
+}

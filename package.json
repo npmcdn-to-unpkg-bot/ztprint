@@ -1,0 +1,20 @@
+{
+  "name": "ztprint",
+  "version": "1.0.0",
+  "description": "智韬打印",
+  "node-main": "background.js",
+  "main": "ie-review/preview.html",
+  "scripts": {
+    "open": "C:\\Program Files\\nwjs-sdk\\nw.exe"
+  },
+  "window": {
+    "icon": "favicon.png",
+    "min_width": 1200,
+    "min_height": 680
+  },
+  "author": "Gavin.Fu",
+  "license": "MIT",
+  "devDependencies": {
+    "node-printer": "^1.0.2"
+  }
+}
