@@ -1,0 +1,24 @@
+.page {
+    width: 210mm;
+    height: 290mm;
+    margin: auto;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.dt {
+    position: absolute;
+    border: 1px dotted;
+    cursor: pointer;
+}
+
+.text {
+    width: 15mm;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.richText {
+    width: 35mm;
+    overflow: hidden;
+}

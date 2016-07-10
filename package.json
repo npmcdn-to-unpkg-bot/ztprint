@@ -3,18 +3,19 @@
   "version": "1.0.0",
   "description": "智韬打印",
   "node-main": "background.js",
-  "main": "ie-review/preview.html",
+  "main": "page/design.html",
   "scripts": {
     "open": "C:\\Program Files\\nwjs-sdk\\nw.exe"
   },
   "window": {
     "icon": "favicon.png",
     "min_width": 1200,
-    "min_height": 680
+    "min_height": 720
   },
   "author": "Gavin.Fu",
   "license": "MIT",
   "devDependencies": {
-    "node-printer": "^1.0.2"
+    "node-printer": "^1.0.2",
+    "phantom-html-to-pdf": "^0.4.4"
   }
 }
