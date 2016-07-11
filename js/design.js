@@ -33,8 +33,8 @@
             $(this).css({
                 'position': 'fixed',
                 'z-index': 9999,
-                'top': e.originalEvent.pageY - 15,
-                'left': e.originalEvent.pageX - 15
+                'top': e.originalEvent.clientY - 20,
+                'left': e.originalEvent.clientX - 20
             });
 
             $(this).after($this);
@@ -43,23 +43,28 @@
         });
 
         $(selected).on('dragEnd', function (e) {
-            var $this = $(this);
-            var dtName = $this.data('dt');
-            var page = $('.page')[0];
-            var dt = dts[dtName];
-
-            console.info(getSize(page));
-            console.info(e.originalEvent.clientX);
-            console.info(offsetLeft(page));
-            dt = dt.render(function (html) {
-                return $(html).css({
-                    'top': e.originalEvent.clientY - offsetTop(page) + 80,
-                    'left': e.originalEvent.clientX - offsetLeft(page)
-                }).appendTo('.page');
-            })
-            registerDesignPlugin(dt);
+            var $this = $(this),
+                dtName = $this.data('dt'),
+                page = $('.page')[0],
+                dt = dts[dtName],
+                offsetY = offsetTop(page),
+                offsetX = offsetLeft(page),
+                topY = e.originalEvent.clientY - offsetY + 80,
+                leftX = e.originalEvent.clientX - offsetX + 15;
 
             $(this).remove();
+
+            if (offsetY > e.originalEvent.clientY || offsetX > e.originalEvent.clientX) {
+                return;
+            }
+
+            dt = dt.render(function (html) {
+                return $(html).css({
+                    top: topY,
+                    left: leftX
+                }).appendTo('.page');
+            });
+            registerDesignPlugin(dt);
         });
     }
 
@@ -78,22 +83,20 @@
      * @returns {offsetTop|Number|number}
      */
     function offsetTop(_self) {
-        var ot = _self.offsetTop;
+        var ot = 0;
          while(_self.parentNode) {
             _self = _self.parentNode;
             ot += _self.offsetTop ? _self.offsetTop : 0;
         }
-
         return ot;
     }
 
     function offsetLeft(_self) {
-        var ot = _self.offsetLeft;
+        var ot = 0;
         while(_self.parentNode) {
             _self = _self.parentNode;
             ot += _self.offsetLeft ? _self.offsetLeft : 0;
         }
-
         return ot;
     }
 })(jQuery);

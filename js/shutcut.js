@@ -6,7 +6,10 @@ var dts = {
     text: {
         render: function ($render) {
             var html = '<div class="dt text">' +
-                '<span class="dt-text">文本框</span>' +
+                    '<span class="dt-text">文本框</span>' +
+                    '<div class="setting">' +
+                        
+                    '</div> ' +
                 '</div>';
 
             return $render(html);
