@@ -19,6 +19,18 @@ a:active {
     text-decoration: none;
 }
 
+.propertygrid .datagrid-view1 .datagrid-group {
+    border-color: #F9F9F9;
+}
+
+.propertygrid .datagrid-group, .propertygrid .datagrid-view1 .datagrid-body, .propertygrid .datagrid-view1 .datagrid-row-over, .propertygrid .datagrid-view1 .datagrid-row-selected {
+    background: #F9F9F9;
+}
+
+.panel-header, .panel-body {
+    border-color: #F9F9F9;
+}
+
 .ellipsis {
     white-space: nowrap;
     overflow: hidden;
@@ -112,11 +124,33 @@ a:active {
     background: #fff;
 }
 
+.property {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    bottom: 0;
+}
+
+.property-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    border-right: 1px solid #A1A4B1;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.panel-body {
+    padding: 0;
+}
+
 .menu-title {
     padding-left: 8px;
 }
 
-.menu-content {
+.menu-content-m {
     margin-right: 1px;
 }
 
@@ -283,6 +317,14 @@ a:active {
     min-height: 500px;
     border: 1px solid #EFEFEF;
     background: rgba(221, 221, 221, 0.38);
+}
+
+.designer-container {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    right: 0;
+    bottom: 0;
 }
 
 .dp-head {

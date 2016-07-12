@@ -1,0 +1,113 @@
+{
+  "total": 7,
+  "rows": [
+    {
+      "name": "Name",
+      "value": "文本框",
+      "group": "Settings",
+      "editor": "text"
+    },
+    {
+      "name": "Text",
+      "value": "文字...",
+      "group": "Settings",
+      "editor": "text"
+    },
+    {
+      "name": "CSS 样式",
+      "value": "",
+      "group": "Settings",
+      "editor": {
+        "type": "textbox",
+        "options": {
+          "multiline": true
+        }
+      }
+    },
+    {
+      "name": "单位",
+      "value": "mm(毫米)",
+      "group": "Settings",
+      "editor": "numberbox"
+    },
+    {
+      "name": "Width",
+      "value": "35",
+      "group": "Settings",
+      "editor": "numberbox"
+    },
+    {
+      "name": "Height",
+      "value": "5",
+      "group": "Settings",
+      "editor": "datebox"
+    },
+    {
+      "name": "Y轴",
+      "value": 0,
+      "group": "Position",
+      "editor": {
+        "type": "numberbox",
+        "options": {
+          "precision": 2,
+          "value": 0
+        }
+      }
+    },
+    {
+      "name": "X轴",
+      "value": 0,
+      "group": "Position",
+      "editor": {
+        "type": "numberbox",
+        "options": {
+          "precision": 2,
+          "value": 0
+        }
+      }
+    },
+    {
+      "name": "MarginTop",
+      "value": 0,
+      "group": "Margin",
+      "editor": {
+        "type": "numberbox",
+        "options": {
+          "precision": 0
+        }
+      }
+    },
+    {
+      "name": "MarginLeft",
+      "value": 0,
+      "group": "Margin",
+      "editor": {
+        "type": "numberbox",
+        "options": {
+          "precision": 0
+        }
+      }
+    },
+    {
+      "name": "MarginRight",
+      "value": 0,
+      "group": "Margin",
+      "editor": {
+        "type": "numberbox",
+        "options": {
+          "precision": 0
+        }
+      }
+    },    {
+      "name": "MarginBottom",
+      "value": 0,
+      "group": "Margin",
+      "editor": {
+        "type": "numberbox",
+        "options": {
+          "precision": 0
+        }
+      }
+    }
+  ]
+}

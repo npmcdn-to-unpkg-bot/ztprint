@@ -6,6 +6,19 @@
     background: #fff;
 }
 
+.setting {
+    border-radius: 0;
+    font-size: 12px;
+}
+
+.setting label {
+    font-weight: normal;
+}
+
+.designer {
+    overflow: hidden;
+}
+
 .dt {
     position: absolute;
     border: 1px dotted;
@@ -14,11 +27,9 @@
 
 .text {
     width: 15mm;
-    overflow: hidden;
     white-space: nowrap;
 }
 
 .richText {
     width: 35mm;
-    overflow: hidden;
 }
